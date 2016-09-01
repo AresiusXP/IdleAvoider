@@ -37,7 +37,7 @@ namespace IdleAvoider.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool MouseTask {
             get {
                 return ((bool)(this["MouseTask"]));
@@ -49,7 +49,7 @@ namespace IdleAvoider.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool CalcTask {
             get {
                 return ((bool)(this["CalcTask"]));
@@ -61,13 +61,25 @@ namespace IdleAvoider.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool NotepadTask {
             get {
                 return ((bool)(this["NotepadTask"]));
             }
             set {
                 this["NotepadTask"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool F15Task {
+            get {
+                return ((bool)(this["F15Task"]));
+            }
+            set {
+                this["F15Task"] = value;
             }
         }
     }

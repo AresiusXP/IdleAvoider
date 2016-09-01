@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.MouseMoveCheckbox = new System.Windows.Forms.CheckBox();
             this.NotepadCheckbox = new System.Windows.Forms.CheckBox();
@@ -41,6 +42,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.F15Checkbox = new System.Windows.Forms.CheckBox();
+            this.F15Tooltip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -85,7 +88,7 @@
             // 
             this.TimespanLabel.AutoSize = true;
             this.TimespanLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TimespanLabel.Location = new System.Drawing.Point(124, 183);
+            this.TimespanLabel.Location = new System.Drawing.Point(124, 203);
             this.TimespanLabel.Name = "TimespanLabel";
             this.TimespanLabel.Size = new System.Drawing.Size(91, 15);
             this.TimespanLabel.TabIndex = 4;
@@ -94,7 +97,7 @@
             // TimeTextbox
             // 
             this.TimeTextbox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TimeTextbox.Location = new System.Drawing.Point(127, 199);
+            this.TimeTextbox.Location = new System.Drawing.Point(127, 221);
             this.TimeTextbox.Name = "TimeTextbox";
             this.TimeTextbox.Size = new System.Drawing.Size(93, 23);
             this.TimeTextbox.TabIndex = 5;
@@ -169,11 +172,29 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // F15Checkbox
+            // 
+            this.F15Checkbox.AutoSize = true;
+            this.F15Checkbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.F15Checkbox.Location = new System.Drawing.Point(127, 179);
+            this.F15Checkbox.Name = "F15Checkbox";
+            this.F15Checkbox.Size = new System.Drawing.Size(92, 19);
+            this.F15Checkbox.TabIndex = 11;
+            this.F15Checkbox.Text = "F15 keypress";
+            this.F15Tooltip.SetToolTip(this.F15Checkbox, "Unintrusive method");
+            this.F15Checkbox.UseVisualStyleBackColor = true;
+            this.F15Checkbox.CheckedChanged += new System.EventHandler(this.F15Checkbox_CheckedChanged);
+            // 
+            // F15Tooltip
+            // 
+            this.F15Tooltip.IsBalloon = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(231, 318);
+            this.Controls.Add(this.F15Checkbox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
@@ -211,6 +232,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.CheckBox F15Checkbox;
+        private System.Windows.Forms.ToolTip F15Tooltip;
     }
 }
 

@@ -18,6 +18,7 @@ namespace IdleAvoider
         public bool MouseTask { get; set; }
         public bool CalcTask { get; set; }
         public bool NotepadTask { get; set; }
+        public bool F15Task { get; set; }
         public List<string> CheckboxesTrue { get; set; }
         
 
@@ -28,6 +29,7 @@ namespace IdleAvoider
             MouseMoveCheckbox.Checked = Properties.Settings.Default.MouseTask;
             NotepadCheckbox.Checked = Properties.Settings.Default.NotepadTask;
             CalculatorCheckbox.Checked = Properties.Settings.Default.CalcTask;
+            F15Checkbox.Checked = Properties.Settings.Default.F15Task;
             TimeTextbox.Text = Properties.Settings.Default.TimeDefault;
             ProgressBar.MarqueeAnimationSpeed = 0;            
         }
@@ -77,6 +79,21 @@ namespace IdleAvoider
                 CheckboxesTrue.Remove("Calc");
             }
         }
+        private void F15Checkbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (F15Checkbox.Checked)
+            {
+                F15Task = true;
+                Properties.Settings.Default.F15Task = true;
+                CheckboxesTrue.Add("F15");
+            }
+            else
+            {
+                F15Task = false;
+                Properties.Settings.Default.F15Task = false;
+                CheckboxesTrue.Remove("F15");
+            }
+        }
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Properties.Settings.Default.Save();
@@ -115,6 +132,9 @@ namespace IdleAvoider
                         break;
                     case "Calc":
                         IdleTools.OpenCalc.RunCalc();
+                        break;
+                    case "F15":
+                        IdleTools.EditNotepad.PressF15();
                         break;
                 }
 

@@ -56,5 +56,10 @@ namespace IdleTools
             WriteOnNotepad(NotepadHandle);
             NotepadProc.Kill();
         }
+        public static void PressF15()
+        {
+            InputSimulator Input = new InputSimulator();
+            Input.Keyboard.KeyPress(WindowsInput.Native.VirtualKeyCode.F15);
+        }
     }
 }
