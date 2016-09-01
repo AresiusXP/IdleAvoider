@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdleTools", "IdleTools\IdleTools.csproj", "{0D713256-B5C0-4ACE-9D56-6764A4799EA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLIAvoider", "CLIAvoider\CLIAvoider.csproj", "{4463E972-3F65-4D8A-A381-24BDB9B3132E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdleAvoider", "IdleAvoider\IdleAvoider.csproj", "{383C2B9C-519D-4DCC-A33F-0F8F881CB447}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D713256-B5C0-4ACE-9D56-6764A4799EA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D713256-B5C0-4ACE-9D56-6764A4799EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D713256-B5C0-4ACE-9D56-6764A4799EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D713256-B5C0-4ACE-9D56-6764A4799EA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4463E972-3F65-4D8A-A381-24BDB9B3132E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4463E972-3F65-4D8A-A381-24BDB9B3132E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4463E972-3F65-4D8A-A381-24BDB9B3132E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4463E972-3F65-4D8A-A381-24BDB9B3132E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{383C2B9C-519D-4DCC-A33F-0F8F881CB447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383C2B9C-519D-4DCC-A33F-0F8F881CB447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383C2B9C-519D-4DCC-A33F-0F8F881CB447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383C2B9C-519D-4DCC-A33F-0F8F881CB447}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
