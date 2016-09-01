@@ -12,7 +12,7 @@ Program performs different tasks to avoid idle status, and you must select at le
   - *Use Calculator* - A new calc will be opened and random numbers will be typed
   - *F15 keypress* (**default**) - F15* key will be pressed once
 
-_*F15 is not a real key, but it is an option to pass as a key being pressed. That's why the most unintrusive option._
+_*F15 is not a real key, but it is an option to pass as a key being pressed. That's why it's the most unintrusive option._
 
 ## Run cycle
 This is the time that will wait in between tasks measured in seconds. You can set this option to whatever you want, but it will be validate that it's a number. _By default, it will be set in 30 seconds._
